@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecasting Model</h1>
+        <p>Select CSV file:</p>
+        <input type="file" id="fileInput" accept=".csv" style="width: 100%;">
+        <button id="predictButton" class="button">Predict</button>
+    </div>
+
+    <script>
+        document.getElementById("predictButton").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>
